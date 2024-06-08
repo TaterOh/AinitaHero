@@ -1,11 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq5tyfnvrs6qk"]
+[gd_scene load_steps=3 format=3 uid="uid://chvrjrckvnfom"]
 
 [ext_resource type="PackedScene" uid="uid://ekj5buk0hn2w" path="res://assets/objects/gui.tscn" id="1_gdcrn"]
+[ext_resource type="PackedScene" uid="uid://bnddwed81xgep" path="res://assets/objects/sheet.tscn" id="2_e1wme"]
 
-[node name="Editor" type="Node2D"]
+[node name="Editor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sheet" parent="." instance=ExtResource("2_e1wme")]
+layout_mode = 1
 
 [node name="GUI" parent="." instance=ExtResource("1_gdcrn")]
-offset_left = 413.0
-offset_top = 220.0
-offset_right = 413.0
-offset_bottom = 220.0
+layout_mode = 1
