@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq5tyfnvrs6qk"]
+
+[ext_resource type="PackedScene" uid="uid://ekj5buk0hn2w" path="res://assets/objects/gui.tscn" id="1_gdcrn"]
+
+[node name="Editor" type="Node2D"]
+
+[node name="GUI" parent="." instance=ExtResource("1_gdcrn")]
+offset_left = 413.0
+offset_top = 220.0
+offset_right = 413.0
+offset_bottom = 220.0
